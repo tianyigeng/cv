@@ -1,8 +1,18 @@
-\documentclass{article}
+\documentclass[9pt]{article}
 \usepackage{CJK}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
 
+% Set margins
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=0in
+\textheight=9.25in
 
-\usepackage[top=3.17cm, bottom=3.17cm, left=2.54cm, right=2.54cm]{geometry}
 \raggedright
 
 %\pagenumbering{arabic}
@@ -38,13 +48,14 @@
 	\end{changemargin}
 }
 
-\newcommand{\contact}[4]{
+\newcommand{\contact}[5]{
 	\begin{changemargin}{-0.5in}{-0.5in}
 		\begin{center}
 			{\Large \scshape {#1}}\\ \smallskip
 			{#2}\\ \smallskip 
 			{#3}\\ \smallskip
-			{#4}\smallskip
+			{#4}\\ \smallskip
+			{#5}\smallskip
 		\end{center}
 	\end{changemargin}
 }
@@ -64,85 +75,179 @@
 
 % END RESUME DEFINITIONS
 
+% Add your personal contents from here!!! 
+
+% Several instructions: 
+
+% \textbf{} bold
+% \emph{} or \textit{} italic type
+% \underline{} underline
+% %--the compiler ignores the text behind '%'
+% Set font size (from small to large)
+% \tiny
+% \scriptsize
+% \footnotesize
+% \small
+% \normalsize
+% \large
+% \Large
+% \LARGE
+% \huge
+% 
+% More information, just google that with keyword "Latex your question"
+
+
 \begin{document}
 \begin{CJK*}{UTF8}{gbsn}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{耿天毅}{gty12@mails.tsinghua.edu.cn}{(+86) 188-1060-1766}
+\contact{耿天毅}{北京市海淀区清华大学紫荆学生公寓1号楼129B，邮政编码：100084}{(+86) 188-1060-1766}{gty12@mails.tsinghua.edu.cn}{\href{http://TarnumG95.github.io}{网站：http://TarnumG95.github.io}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
-教育
-\lineover
-\begin{itemize}
-\item 电子信息科学类\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 清华大学电子工程系 \hfill 2012.8 - 今
-\subitem -成绩排名：4/271
-\item 管理学第二学位\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 清华大学经济管理学院 \hfill 2013.9 - 今
-\end{itemize}
+\header{教育}
+
+\begin{body}
+	\vspace{14pt}
+
+% -----
+	清华大学 电子工程系 \hfill 中国北京 \\
+工学学士 \hfill 2012.8 - 今 \\
+学习成绩：94.02/100.00\ \ \ 排名：3/241\\
+兴趣：信号处理，数据挖掘 \\
+\vspace{6pt}
+
+% -----
+	清华大学 经济管理学院 \hfill 中国北京 \\
+管理学学士 \hfill 2013.8 - 今 \\
+\vspace{6pt}
+
+% -----
+	威斯康星大学麦迪逊分校 工学院 \hfill 美国威斯康星州 \\
+交换生，优秀本科生国际交流项目 \hfill 2014.8 - 2014.12 \\
+学习成绩：3.92/4.00
+
+\end{body}
+
+\smallskip
+\smallskip
+\smallskip
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skills
-技能
-\lineover
-\begin{itemize}
-\item 英语：雅思7.0分(2014.1.25)
-\item 编程
-\end{itemize}
+\header{技能}
+
+\begin{body}
+	\vspace{14pt}
+% -----
+	数学：熟悉微积分，线性代数，概率论与随机过程，离散数学，算法；\\
+	\smallskip
+% -----
+	电子工程：熟悉信号处理，图像处理；\\
+	\smallskip
+	% -----
+	计算机：熟悉C/C++、Python、R、MATLAB、Mathemetica、Linux、Mac OS X，初学HTML、JavaScript；\\
+	\smallskip
+
+	% -----
+	语言：熟练掌握英语（雅思7.0分）。\\
+\end{body}
+\smallskip
+\smallskip
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+\header{项目经历}
+
+\begin{body}
+	\vspace{14pt}
+% -----
+	定位图片中水印形式的直线 \hfill 2014.9 - 2014.11
+	\begin{itemize}
+	\itemsep 0pt
+	\item 设计了准确而高效的检测直线水印的算法；
+	\item 应用了含高斯滤波器、统计学习在内的多种技术处理图片；
+	\item 课程班级竞赛中取得第二名。
+	\end{itemize}
+	\smallskip
+% -----
+	挖掘新浪微博（中国版Tweeter）数据 \hfill 2015.2 - 今
+	\begin{itemize}
+	\itemsep 0pt
+	\item 用Python处理TB级别数据；
+	\item  试图发掘用户行为模式随时间的变化，例如近年来用户更倾向用移动端发微博。
+	\end{itemize}
+	\smallskip
+
+\end{body}
+\smallskip
+\smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Awards and Honors
-奖励
-\lineover
-\begin{itemize}
-\item ``一二·九''奖学金 \hfill 2013.10
-\subitem -2013年电子系综合优秀奖学金评比年级第一名
-\item 清华大学新生一等奖学金 \hfill 2012.8
-\subitem -2012年高考吉林省第一名（理科）
-\end{itemize}
+\header{奖励}
+
+\begin{body}
+	\vspace{14pt}
+	% -----
+	国家奖学金 \hfill{} 2014.10\\
+	\smallskip
+	% -----
+	清华大学一二.九奖学金 \hfill{} 2013.10\\
+	\smallskip
+	% -----
+	第30届全国大学生物理竞赛（非物理A类）二等奖 \hfill{} 2013.12\\
+	
+	\smallskip
+	% -----
+	清华大学新生一等奖学金 \hfill{} 2012.10\\
+	\smallskip
+	% -----
+	2012年吉林省高考理科类第一名（1/100,000） \hfill{} 2012.6
+\end{body}
+
+\smallskip
+\smallskip
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Social
-社会工作
-\lineover
-\begin{itemize}
-\item 校团委 学习实践部 \hfill 2014.3 - 今
-\subitem -负责实践梦想工作室(iPDF)、实践梦想计划、中美支教等工作
-\item 电子工程系无25班班长 \hfill 2013.9 - 今
-\item 领航志愿服务团志愿者部 \hfill 2013.9 - 今
-\item 电子工程系团委 新生组·办公室 \hfill 2013.7 - 今
-\subitem -编写、校对电子系2013年新生手册
-\item 电子工程系无25班学习委员 \hfill 2012.9 - 2013.9
-\subitem -无25获评校甲级团支部、校优良学风班
-\end{itemize}
+% Major Courses
+% \header{Main Courses}
+
+% \begin{body}
+% 	\vspace{14pt}
+
+% 	\begin{itemize} \itemsep -0pt
+% 		\item Mining Massive Datasets (Stanford CS246, Coursera)
+% 		\item Computer Program Design -- 98, 97 (2012 Fall \& 2013 Spring)
+% 		\item Data Structure, Numerical Analysis and Algorithms -- 89 (2013 Fall)
+% 		\item Probability and Stochastic Processes(1) -- 100 (2014 Spring)
+% 		\item Probability and Stochastic Processes(2) -- A (UW-Madison ECE 730, 2014 Fall)
+% 	\end{itemize}
+
+% \end{body}
+
+% \smallskip
+% \smallskip
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experience
-经历
-\lineover
-\begin{itemize}
-\item 2014年自强计划复试志愿者 \hfill 2014.1
-\item 2013年清华大学暑期学校 \hfill 2013.8
-\subitem -任N大班辅导员
-\item 2013年、2014年自主招生复试志愿者 \hfill 2013/14.4
-\item 2013年新生团队训练营 助教 \hfill 2013.8 - 2013.9
-\subitem -参与策划广交清华友、畅谈清华梦等活动
-\item 赴云南大理调研白族非物质文化遗产社会实践 \hfill 2013.7
-\subitem -获电子系2013年暑期实践银奖
-\item 2012年清华大学优秀新生夏令营 营员 \hfill 2012.8
-\end{itemize}
-% \newpage{} % uncomment this line if you want to force a new page
+\header{其他}
+
+\begin{body}
+	\vspace{14pt}
+	% -----
+	清华大学无25班班长，学习委员 \hfill 2012.10 - 2014.9\\
+	\smallskip
+	% -----
+	已修课程列表： \href{tarnumg95.github.io/course.html}{http://TarnumG95.github.io/course.html}\\
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Publications
-%\header{Selected Publications}
-%
-%\begin{body}
-%	\vspace{14pt}
-%	Seth Holloway. ``\textbf{Writing Resumes in LaTeX},'' in \emph{Proceedings of the Mind of Seth Holloway}. 2011.\\
-%	\smallskip
-%	Seth Holloway, Andrea Holloway. ``\textbf{Accent Modification Rules},'' in \emph{Proceedings of Fun}. 2008.\\
-%\end{body}
-%
-%\smallskip
+\end{body}
 
+\smallskip
+\smallskip
 
 \end{CJK*}
 \end{document}
