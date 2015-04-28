@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 \usepackage[usenames]{color}
 \usepackage[colorlinks,linkcolor=black]{hyperref}
+<<<<<<< HEAD
 
 % Set margins
 \leftmargin=0.25in
@@ -13,6 +14,16 @@
 \topmargin=0in
 \textheight=9.25in
 
+=======
+
+% Set margins
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=0in
+\textheight=9.25in
+
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 \raggedright
 
 %\pagenumbering{arabic}
@@ -34,21 +45,32 @@
 }
 
 \newcommand{\lineover}{
-	\begin{changemargin}{-0.05in}{-0.05in}
-		\vspace*{-8pt}
-		\hrulefill \\
-		\vspace*{-2pt}
-	\end{changemargin}
+    \begin{changemargin}{-0.05in}{-0.05in}
+        \vspace*{-8pt}
+        \hrulefill \\
+        \vspace*{-2pt}
+    \end{changemargin}
 }
 
 \newcommand{\header}[1]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\scshape{#1}\\
-  	\lineover
-	\end{changemargin}
+    \begin{changemargin}{-0.5in}{-0.5in}
+        \scshape{#1}\\
+    \lineover
+    \end{changemargin}
 }
 
 \newcommand{\contact}[5]{
+<<<<<<< HEAD
+    \begin{changemargin}{-0.5in}{-0.5in}
+        \begin{center}
+            {\Large \scshape {#1}}\\ \smallskip
+            {#2}\\ \smallskip 
+            {#3}\\ \smallskip
+            {#4}\\ \smallskip
+            {#5}\smallskip
+        \end{center}
+    \end{changemargin}
+=======
 	\begin{changemargin}{-0.5in}{-0.5in}
 		\begin{center}
 			{\Large \scshape {#1}}\\ \smallskip
@@ -58,19 +80,20 @@
 			{#5}\smallskip
 		\end{center}
 	\end{changemargin}
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 }
 
 \newenvironment{body} {
-	\vspace*{-16pt}
-	\begin{changemargin}{-0.25in}{-0.5in}
-  }	
-	{\end{changemargin}
-}	
+    \vspace*{-16pt}
+    \begin{changemargin}{-0.25in}{-0.5in}
+  } 
+    {\end{changemargin}
+}   
 
 \newcommand{\school}[4]{
-	\textbf{#1} \hfill \emph{#2\\}
-	#3\\ 
-	#4\\
+    \textbf{#1} \hfill \emph{#2\\}
+    #3\\ 
+    #4\\
 }
 
 % END RESUME DEFINITIONS
@@ -102,23 +125,43 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
+<<<<<<< HEAD
+\contact{耿天毅}{(+86) 177-0130-8306}{gty12@mails.tsinghua.edu.cn}{\href{http://tianyi.world}{个人网站：http://tianyi.world}}
+=======
 \contact{耿天毅}{北京市海淀区清华大学紫荆学生公寓1号楼129B，邮政编码：100084}{(+86) 188-1060-1766}{gty12@mails.tsinghua.edu.cn}{\href{http://TarnumG95.github.io}{网站：http://TarnumG95.github.io}}
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
 \header{教育}
 
 \begin{body}
+<<<<<<< HEAD
+    \vspace{14pt}
+
+% -----
+    清华大学\ 电子工程系 \hfill 中国北京 \\
+=======
 	\vspace{14pt}
 
 % -----
 	清华大学 电子工程系 \hfill 中国北京 \\
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 工学学士 \hfill 2012.8 - 今 \\
 学习成绩：9*.**/100.00\ \ \ 排名：*/241\\
 兴趣：信号处理，数据挖掘 \\
 \vspace{6pt}
 
 % -----
+<<<<<<< HEAD
+    清华大学\ 经济管理学院 \hfill 中国北京 \\
+管理学学士（第二学士学位）\hfill 2013.8 - 今 \\
+\vspace{6pt}
+
+% -----
+    威斯康星大学麦迪逊分校\ 电子与计算机工程系\hfill 美国威斯康星州 \\
+优秀本科生国际交流项目 \hfill 2014.8 - 2014.12 \\
+=======
 	清华大学 经济管理学院 \hfill 中国北京 \\
 管理学学士 \hfill 2013.8 - 今 \\
 \vspace{6pt}
@@ -126,6 +169,7 @@
 % -----
 	威斯康星大学麦迪逊分校 工学院 \hfill 美国威斯康星州 \\
 交换生，优秀本科生国际交流项目 \hfill 2014.8 - 2014.12 \\
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 学习成绩：3.92/4.00
 
 \end{body}
@@ -139,6 +183,29 @@
 \header{技能}
 
 \begin{body}
+<<<<<<< HEAD
+    \vspace{14pt}
+    % -----
+    计算机技能：
+    \begin{itemize}
+    \itemsep 0pt
+    \item 熟练：C/C++、Python、MATLAB;
+    \item 熟悉：Hadoop、R、Java、Linux、Mac OS X；
+    \item 初学：HTML、JavaScript；
+    \end{itemize}
+
+    \smallskip
+% -----
+    数学：熟悉微积分，线性代数，概率论与随机过程，离散数学，算法；\\
+    \smallskip
+% -----
+    电子工程：熟悉信号处理，图像处理；\\
+    \smallskip
+    
+
+    % -----
+    语言：熟练掌握英语（雅思7.0分）。\\
+=======
 	\vspace{14pt}
 % -----
 	数学：熟悉微积分，线性代数，概率论与随机过程，离散数学，算法；\\
@@ -152,6 +219,7 @@
 
 	% -----
 	语言：熟练掌握英语（雅思7.0分）。\\
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 \end{body}
 \smallskip
 \smallskip
@@ -162,6 +230,34 @@
 \header{项目经历}
 
 \begin{body}
+<<<<<<< HEAD
+    \vspace{14pt}
+% -----
+    定位图片中水印形式的直线 \hfill 2014.9 - 2014.11
+    \begin{itemize}
+    \itemsep 0pt
+    \item 设计了准确而高效的检测直线水印的算法；
+    \item 应用了含高斯滤波器、统计学习在内的多种技术处理图片；
+    \item 演示：\href{http://TarnumG95.github.io/chainlinedemo.html}{http://TarnumG95.github.io/chainlinedemo.html}。
+    \end{itemize}
+    \smallskip
+% -----
+    挖掘新浪微博数据 \hfill 2015.2 - 2015.4
+    \begin{itemize}
+    \itemsep 0pt
+    \item 用Python处理TB级别微博数据；
+    \item 发掘了用户行为模式随时间的变化，例如近年来用户更倾向用移动端发微博。
+    \end{itemize}
+    \smallskip
+    % -----
+网络大数据挖掘与数据驱动的未来网络关键技术研究 \hfill 2015.3 - 今
+    \begin{itemize}
+    \itemsep 0pt
+    \item 用Hadoop平台分析社交媒体、运营商等记录网络与用户行为的大规模真实数据；
+    \item 通过数据挖掘，认识用户规律，并设计大数据驱动的下一代移动通信网络。
+    \end{itemize}
+    \smallskip
+=======
 	\vspace{14pt}
 % -----
 	定位图片中水印形式的直线 \hfill 2014.9 - 2014.11
@@ -181,6 +277,7 @@
 	\item  试图发掘用户行为模式随时间的变化，例如近年来用户更倾向用移动端发微博。
 	\end{itemize}
 	\smallskip
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 
 \end{body}
 \smallskip
@@ -191,6 +288,23 @@
 \header{奖励}
 
 \begin{body}
+<<<<<<< HEAD
+    \vspace{14pt}
+    % -----
+    2015年数学建模竞赛全球二等奖 \hfill{} 2015.4\\
+    \smallskip
+    % -----
+    国家奖学金 \hfill{} 2014.10\\
+    \smallskip
+    % -----
+    清华大学一二.九奖学金（综合素质前2\%） \hfill{} 2013.10\\
+    \smallskip
+    % -----
+    清华大学新生一等奖学金 \hfill{} 2012.10\\
+    \smallskip
+    % -----
+    2012年吉林省高考理科类第一名（1/100,000） \hfill{} 2012.6
+=======
 	\vspace{14pt}
 	% -----
 	国家奖学金 \hfill{} 2014.10\\
@@ -207,6 +321,7 @@
 	\smallskip
 	% -----
 	2012年吉林省高考理科类第一名（1/100,000） \hfill{} 2012.6
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 \end{body}
 
 \smallskip
@@ -217,6 +332,17 @@
 % \header{Main Courses}
 
 % \begin{body}
+<<<<<<< HEAD
+%   \vspace{14pt}
+
+%   \begin{itemize} \itemsep -0pt
+%       \item Mining Massive Datasets (Stanford CS246, Coursera)
+%       \item Computer Program Design -- 98, 97 (2012 Fall \& 2013 Spring)
+%       \item Data Structure, Numerical Analysis and Algorithms -- 89 (2013 Fall)
+%       \item Probability and Stochastic Processes(1) -- 100 (2014 Spring)
+%       \item Probability and Stochastic Processes(2) -- A (UW-Madison ECE 730, 2014 Fall)
+%   \end{itemize}
+=======
 % 	\vspace{14pt}
 
 % 	\begin{itemize} \itemsep -0pt
@@ -226,6 +352,7 @@
 % 		\item Probability and Stochastic Processes(1) -- 100 (2014 Spring)
 % 		\item Probability and Stochastic Processes(2) -- A (UW-Madison ECE 730, 2014 Fall)
 % 	\end{itemize}
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 
 % \end{body}
 
@@ -237,12 +364,23 @@
 \header{其他}
 
 \begin{body}
+<<<<<<< HEAD
+    \vspace{14pt}
+    % -----
+    清华大学无25班班长，学习委员 \hfill 2012.10 - 2014.9\\
+    \smallskip
+    清华大学本科生课程咨询委员会 \hfill 2014.12 - 今\\
+    \smallskip
+    % -----
+    已修课程列表： \href{http://tarnumg95.github.io/course.html}{http://TarnumG95.github.io/course.html}\\
+=======
 	\vspace{14pt}
 	% -----
 	清华大学无25班班长，学习委员 \hfill 2012.10 - 2014.9\\
 	\smallskip
 	% -----
 	已修课程列表： \href{tarnumg95.github.io/course.html}{http://TarnumG95.github.io/course.html}\\
+>>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 
 
 \end{body}
