@@ -1,16 +1,29 @@
-\documentclass[9pt]{article}
+\documentclass[a4paper, 11pt]{article}
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[usenames]{color}
-\usepackage[colorlinks,linkcolor=black]{hyperref}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=28mm,
+ right=28mm,
+ top=20mm,
+ bottom=0mm,
+ }
 
 % Set margins
-\leftmargin=0.25in
-\oddsidemargin=0.25in
-\textwidth=6.0in
-\topmargin=0in
-\textheight=9.25in
+%\leftmargin=0.2in
+%\textwidth=6.0in
+%\topmargin=0in
+%\textheight=9.25in
 
 \raggedright
 
@@ -109,23 +122,16 @@
 	\vspace{14pt}
 
 % -----
-	\textbf{Tsinghua University}, \emph{Department of Electronic Engineering} \hfill Beijing, P.R. China \\
-Bachlor of Engineering in Electronic Engineering \hfill \emph{Aug. 2012 - Jul. 2016}(expected){} \\
-GPA: 9*.**/100.00\ \ \ Rank: */241\\
-Concentration: Signal Processing, Data Mining. \\
-\vspace{6pt}
+	\textbf{Tsinghua University} \hfill Beijing, P.R. China \\
+B.Eng - Major in Electronic Information Science and Technology  \hfill \emph{Aug. 2012 - Jul. 2016}(expected){} \\
+B.B.A - Minor in Business Administration \\
+GPA: 9*.*/100.0\ \ \ Rank: */241\\
+Concentration: Data Mining, Software Developing. \\
+\vspace{5pt}
+
 
 % -----
-	\textbf{Tsinghua University}, \emph{School of Economics and Management} \hfill Beijing, P.R. China \\
-Bachlor in Business Administration(Second Degree) \hfill \emph{Aug. 2013 - Jul. 2016}(expected){} \\
-\vspace{6pt}
-
-% -----
-<<<<<<< HEAD
-	\textbf{University of Wisconsin - Madison}, \emph{College of Electrical and Computer Engineering} \hfill Madison, WI, U.S. \\
-=======
-	\textbf{University of Wisconsin - Madison}, \emph{College of Engineering} \hfill Madison, WI, U.S. \\
->>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
+	\textbf{University of Wisconsin - Madison} \hfill Madison, WI, U.S. \\
 	Exchange Student, International Academic Program \hfill \emph{Aug. 2014 - Dec. 2014}{} \\
 GPA: 3.92/4.00\\
 
@@ -133,31 +139,26 @@ GPA: 3.92/4.00\\
 \end{body}
 
 \smallskip
-\smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skills
-\header{Professional \& Personal Skills}
+\header{Professional Skills}
 
 \begin{body}
 	\vspace{14pt}
 	Computer Capability: 
 	\begin{itemize}
 	\itemsep 0pt
-	\item Skilled in C/C++, Python, MATLAB;
-	\item Familiar with Hadoop, R, Java, Linux, Mac OS X;
-	\item Beginner in HTML, JavaScript.
+	\item Skilled in C++, Python, MATLAB;
+	\item Familiar with Linux, Mac OS X, Computer Network;
+	\item Beginner in Java, HTML, JavaScript.
 	\end{itemize}
-	\smallskip
 % -----
-	Background in Mathematics: Familiar with calculus, linear algebra, probability and stochastic processes, discrete mathematics, algorithms.\\
-	\smallskip
-% -----
-	Background in Electronic Engineering: Familiar with signal processing, image processing.\\
+	Background in Mathematics: Familiar with Algorithms, Discrete Mathematics, Probability.\\
+\smallskip
 	% -----
 	Language Proficiency: Fluent in English (IELTS 7.0).\\
 \end{body}
-\smallskip
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,13 +168,12 @@ GPA: 3.92/4.00\\
 \begin{body}
 	\vspace{14pt}
 % -----
-	Locating chain lines from beta-radiography images \hfill \emph{Sep. 2014 - Nov. 2014}
+	Locating Chain Lines from Beta-radiography Images \hfill \emph{Sep. 2014 - Nov. 2014}
 	\begin{itemize}
 	\itemsep 0pt
-<<<<<<< HEAD
 	\item Developed an algorithm to detect chain lines reliably and precisely;
 	\item Applied multiple techniques including Gaussian filtering, statistical learning to process images;
-	\item Demo: \href{http://TarnumG95.github.io/chainlinedemo.html}{http://TarnumG95.github.io/chainlinedemo.html}
+	\item Demo: \href{http://TarnumG95.github.io/chainlinedemo.html}{http://TarnumG95.github.io/chainlinedemo.html}.
 	\end{itemize}
 	\smallskip
 % -----
@@ -182,16 +182,10 @@ GPA: 3.92/4.00\\
 	\itemsep 0pt
 	\item Processed TB scale Weibo data with Python;
 	\item Found user behavior patterns over time, i.e. tendency to post from mobile phones recent days. 
-=======
-	\item Developed an algorithm to detect chain lines reliably and precisely. 
-	\item Applied multiple techniques including Gaussian filtering, statistical learning to process images. 
-	\item Won the second place in class competition. 
-	\item Demo: \href{http://TarnumG95.github.io/chainlinedemo.html}{http://TarnumG95.github.io/chainlinedemo.html}
->>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 	\end{itemize}
 	\smallskip
 % -----
-	Future Internet techniques driven by Big-Data \hfill \emph{Mar. 2015 - Present}
+	Future Internet Techniques driven by Big-Data \hfill \emph{Mar. 2015 - Present}
 	\begin{itemize}
 	\itemsep 0pt
 	\item Analyzed large-scale data associated with social media and carrier network on Hadoop;
@@ -201,7 +195,6 @@ GPA: 3.92/4.00\\
 
 \end{body}
 \smallskip
-\smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Awards and Honors
@@ -210,23 +203,22 @@ GPA: 3.92/4.00\\
 \begin{body}
 	\vspace{14pt}
 	% -----
-	Honorable Mention, 2015 Interdisciplinary Contest on Modeling \hfill{} \emph{Apr. 2015}\\
+	Honorable Mention, 2015 Mathematical Contest on Modeling \hfill{} \emph{Apr. 2015}\\
 	\smallskip
 	% -----
-	National Scholarship(For Top 2\%), \emph{Ministry of Education, P.R. China} \hfill{} \emph{Oct. 2014}\\
+	National Scholarship (For Top 2\%), \emph{Ministry of Education, P.R. China} \hfill{} \emph{Oct. 2014}\\
 	\smallskip
 	% -----
-	``Dec. 9th'' Scholarship(For Top 2\%), \emph{Tsinghua University} \hfill{} \emph{Oct. 2013}\\
+	``Dec. 9th'' Scholarship (For Top 2\%), \emph{Tsinghua University} \hfill{} \emph{Oct. 2013}\\
 	\smallskip
 
 	% -----
 	First-class Scholarship for Excellent Freshmen, \emph{Tsinghua University} \hfill{} \emph{Oct. 2012}\\
 	\smallskip
 	% -----
-	Ranked No.1 in National Matriculation Test(Science), Jilin Province (1/100,000) \hfill{} \emph{Jun. 2012}
+	Ranked No.1 in National Matriculation Test (Science), Jilin Province (1/100,000) \hfill{} \emph{Jun. 2012}
 \end{body}
 
-\smallskip
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -258,21 +250,11 @@ GPA: 3.92/4.00\\
 	% -----
 	\textbf {Monitor, Academic Coordinator}, \emph{Class EE25, Tsinghua University} \hfill \emph{Oct. 2012 - Sept. 2014}\\
 	\smallskip
-<<<<<<< HEAD
-	Advisory Committee of Undergraduate Curriculum,  \emph{Tsinghua University} \hfill \emph{Dec. 2014 - Present}\\
-	\smallskip
 	% -----
 	List of coursework: \href{http://tarnumg95.github.io/course.html}{http://TarnumG95.github.io/course.html}\\
-=======
-	% -----
-	List of coursework: \href{tarnumg95.github.io/course.html}{http://TarnumG95.github.io/course.html}\\
->>>>>>> 6a3a2a3a42d536ae20103189d88ff56d732f039e
 
 
 \end{body}
-
-\smallskip
-\smallskip
 
 
 \end{document}
